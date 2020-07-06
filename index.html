@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <style>
+        body,
+        header,
+        footer,
+        main,
+        section,
+        div,
+        article,
+        p,
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        footer {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+        }
+        
+        h1,
+        header-navigation {
+            font-family: 'Raleway', sans-serif;
+            font-weight: 700;
+        }
+        
+        .quoted-card {
+            background-image: url('./images/icon-quotes.svg');
+            background-repeat: no-repeat;
+            background-size: 20px;
+            background-position: 30px 20px;
+            box-shadow: 0 0 10px grey;
+        }
+        
+        .avatar {
+            max-height: 50px;
+            max-width: 50px;
+        }
+        
+        .bg-grey {
+            background-color: hsl(240, 75%, 98%);
+        }
+        
+        .bg-blue {
+            background-color: hsl(238, 22%, 44%);
+            color: white;
+        }
+        
+        .bg-darkblue {
+            background-color: hsl(243, 87%, 12%);
+            color: white;
+        }
+        
+        .list {
+            list-style: none;
+            column-count: 2;
+            column-gap: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="d-flex flex-row p-2 justify-content-between">
+        <img src="./images/logo.svg" class="img-fluid" alt="logo">
+        <div class="header-nav d-flex flex-row">
+            <button class="btn mr-3">Features</button>
+            <button class="btn mr-3">Team</button>
+            <button class="btn">Sign In</button>
+        </div>
+
+
+    </header>
+
+    <main>
+        <section class="d-flex flex-row p-5 mb-3">
+            <div class="d-flex flex-column">
+                <h1 class="mt-5">All your files in one secure location, accessible anywhere.</h1>
+                <p class="mt-3 w-75 mb-3">Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.</p>
+                <div class="form-group d-flex flex-row">
+                    <input id="email" type="text" class="form-control" name="email" placeholder="Enter your email...">
+                    <input type="submit" class="btn btn-info" value="Get Started">
+                </div>
+
+            </div>
+            <img src="./images/illustration-1.svg" class="rounded img-fluid w-50" alt="illustration-1">
+        </section>
+
+
+        <img src="./images/bg-curve-desktop.svg" class="w-100" alt="curve">
+
+        <section class="bg-grey d-flex flex-row px-5 pb-5">
+            <div class="d-flex flex-column">
+
+                <h1 class="mt-5"> Stay productive, wherever you are</h1>
+                <p class="mt-3 w-75">
+                    Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+                </p>
+                <p class="w-75 mb-3">
+                    Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!
+                </p>
+                <article class="quoted-card card p-4">
+                    <p class="mb-3 mt-3">
+                        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                    </p>
+                    <div class="d-flex flex-row">
+                        <img src="./images/avatar-testimonial.jpg" class="avatar rounded-circle" alt="avatar">
+                        <div class="ml-2">
+                            <p class="font-weight-bold">Kyle Burton</p>
+                            <p>Founder & CEO, Huddle</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <img src="./images/illustration-2.svg" class="h-100 w-50" alt="illustration-2">
+        </section>
+
+        <section class="bg-blue d-flex flex-row p-5 justify-content-around">
+            <div class="d-flex flex-column w-50">
+                <h1 class="mt-3 mb-3">Get early access today</h1>
+                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+            </div>
+            <div class="form-group d-flex flex-column">
+                <input id="email" type="text" class="form-control mt-5 mb-3" name="email" placeholder="Enter your email...">
+                <input type="submit" class="btn btn-info " value="Get Started For Free">
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-darkblue d-flex flex-row p-5">
+        <section class="d-flex flex-column">
+            <img src="./images/logo.svg" class="img-fluid w-50 mb-4" alt="logo">
+            <p><img src="./images/icon-phone.svg" alt="icon-phone"> Phone: +1-543-123-4567</p>
+            <p><img src="./images/icon-email.svg" alt="icon-email"> example@fylo.com</p>
+        </section>
+
+        <ul class="list ml-5 mt-5">
+            <li>About Us</li>
+            <li>Jobs</li>
+            <li>Press</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+            <li>Terms</li>
+            <li>Privacy</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
